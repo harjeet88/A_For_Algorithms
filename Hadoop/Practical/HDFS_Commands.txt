@@ -1,0 +1,17 @@
+hadoop fs -ls 
+hadoop fs -ls /user/harjeet/
+hadoop fs -put /home/harjeet/Desktop/test_file /user/harjeet/my_first_file.txt
+hadoop fs -ls /user/harjeet/
+hadoop fs -cat /user/harjeet/my_first_file.txt
+hadoop fs -cat /user/harjeet/my_first_file.txt
+hadoop fs -cat /user/harjeet/my_first_file.txt | head -10
+hadoop fs -mv /user/harjeet/my_first_file.txt /user/harjeet/new_path/new_file.txt
+hadoop fs -mkdir /user/harjeet/new_path/
+hadoop fs -ls /user/harjeet/
+hadoop fs -mv /user/harjeet/my_first_file.txt /user/harjeet/new_path/new_file.txt
+hadoop fs -cat /user/harjeet/new_path/new_file.txt | head -10
+hadoop fs -cp /user/harjeet/new_path/new_file.txt /user/harjeet/new_path/new_file_copy.txt
+hadoop fs -ls /user/harjeet/new_path/
+hadoop fs -get /user/harjeet/new_path/new_file_copy.txt /home/harjeet/Desktop/copied.txt
+hadoop fs -rm /user/harjeet/new_path/new_file_copy.txt
+hadoop fs -ls /user/harjeet/new_path/
